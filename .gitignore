@@ -1,0 +1,11 @@
+# Fișiere generate de compilare (Binare și obiecte)
+build/
+
+
+# Setări specifice editorului 
+.vscode/
+.idea/
+
+# Documentatie 
+docs/
+html/
