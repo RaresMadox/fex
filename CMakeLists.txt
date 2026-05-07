@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.28.3)
 
 project(FEX VERSION 1.0 LANGUAGES CXX)
 
+
+
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -29,6 +31,7 @@ set(SOURCES
     controller/FileOperationController.cpp
     controller/CompareController.cpp
     controller/SearchController.cpp
+    core/CustomApplication.cpp
 )
 
 set(HEADERS
@@ -50,6 +53,8 @@ set(HEADERS
     controller/FileOperationController.h
     controller/CompareController.h
     controller/SearchController.h
+    # Core Application
+    core/CustomApplication.h
 )
 
 set(RESOURCES
