@@ -2,10 +2,9 @@ cmake_minimum_required(VERSION 3.28.3)
 
 project(FEX VERSION 1.0 LANGUAGES CXX)
 
-
-
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
@@ -15,7 +14,7 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets Core Gui)
 
 set(SOURCES
     main.cpp
-    mainwindow.cpp
+    MainWindow.cpp
     # UI widgets
     ui/ToolBarWidget.cpp
     ui/ToolTextButton.cpp
@@ -32,10 +31,11 @@ set(SOURCES
     controller/CompareController.cpp
     controller/SearchController.cpp
     core/CustomApplication.cpp
+    utils/StandardFile.cpp
 )
 
 set(HEADERS
-    mainwindow.h
+    MainWindow.h
     # UI widgets
     ui/ToolBarWidget.h
     ui/ToolTextButton.h
@@ -55,6 +55,8 @@ set(HEADERS
     controller/SearchController.h
     # Core Application
     core/CustomApplication.h
+    # Utils
+    utils/StandardFile.h
 )
 
 set(RESOURCES

@@ -23,7 +23,7 @@
  */
 
 #include <QApplication>
-#include "mainwindow.h"
+#include "MainWindow.h"
 #include "core/CustomApplication.h"
 
 

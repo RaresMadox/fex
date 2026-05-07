@@ -1,6 +1,7 @@
 #include "CustomApplication.h"
-#include <QFile>
+#include "utils/StandardFile.h"
 #include <QFileSystemWatcher>
+#include <memory>
 
 CustomApplication* CustomApplication::_instance = nullptr;
 
@@ -17,11 +18,12 @@ CustomApplication::CustomApplication(int &argc, char **argv) : QApplication(argc
 
 }
 
+CustomApplication::~CustomApplication() {}
+
 void CustomApplication::applyStyleSheet() {
-    QFile f(getStyleFilePath());
-    if (f.open(QFile::ReadOnly)) {
-        this->setStyleSheet(f.readAll());
-        f.close();
+    auto f = std::make_unique<StandardFile>(getStyleFilePath().toStdString());
+    if (f->open()) {
+        this->setStyleSheet(QString::fromStdString(f->readAll()));
         qDebug() << "StyleSheet reîncărcat cu succes.";
     }
 }
@@ -29,7 +31,7 @@ void CustomApplication::applyStyleSheet() {
 void CustomApplication::setupStyleWatcher() {
     QString path = getStyleFilePath();
 
-    if (!path.startsWith(":/")) {
+    if (!path.isEmpty()) {
         auto *watcher = new QFileSystemWatcher({path}, this);
         
         QObject::connect(watcher, &QFileSystemWatcher::fileChanged, this, [this, watcher, path](const QString &) {
@@ -46,8 +48,8 @@ void CustomApplication::setupStyleWatcher() {
 
 QString CustomApplication::getStyleFilePath() const {
     QString localPath = QString(SOURCE_DIR) + "/style.qss";
-    if (QFile::exists(localPath)) {
+    if (StandardFile::exists(localPath.toStdString())) {
         return localPath;
     }
-    return QStringLiteral(":/style.qss");
+    return {};
 }

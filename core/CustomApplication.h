@@ -2,13 +2,13 @@
 
 #include <QApplication>
 #include <QString>
-#include <QFile>
 
 
 class CustomApplication : public QApplication {
     Q_OBJECT
     public:
         CustomApplication(int &argc, char **argv);
+        ~CustomApplication();
         
         static CustomApplication* instance();
 

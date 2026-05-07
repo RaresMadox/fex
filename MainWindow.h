@@ -1,5 +1,5 @@
 /**
- * @file mainwindow.h
+ * @file MainWindow.h
  * @brief Top-level application window — layout and signal wiring only.
  *
  * MainWindow is a thin coordinator:
