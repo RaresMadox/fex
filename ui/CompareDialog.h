@@ -15,8 +15,6 @@
  */
 
 #pragma once
-#ifndef COMPAREDIALOG_H
-#define COMPAREDIALOG_H
 
 #include <QDialog>
 #include <QTableWidget>
@@ -64,5 +62,3 @@ private:
      */
     void populate(const QList<CompareEntry> &entries);
 };
-
-#endif

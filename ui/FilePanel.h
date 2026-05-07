@@ -22,8 +22,6 @@
  */
 
 #pragma once
-#ifndef FILEPANEL_H
-#define FILEPANEL_H
 
 #include <QWidget>
 #include <QVBoxLayout>
@@ -143,5 +141,3 @@ private:
      */
     void setupView();
 };
-
-#endif

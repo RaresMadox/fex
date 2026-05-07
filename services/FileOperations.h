@@ -7,8 +7,6 @@
  */
 
 #pragma once
-#ifndef FILEOPERATIONS_H
-#define FILEOPERATIONS_H
 
 #include <QString>
 
@@ -33,5 +31,3 @@ namespace FileOperations {
 bool copyPath(const QString &src, const QString &dst);
 
 } // namespace FileOperations
-
-#endif

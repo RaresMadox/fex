@@ -13,8 +13,6 @@
  */
 
 #pragma once
-#ifndef FILEOPERATIONCONTROLLER_H
-#define FILEOPERATIONCONTROLLER_H
 
 #include <QObject>
 #include <QStringList>
@@ -63,5 +61,3 @@ signals:
 private:
     QWidget *_parentWidget; ///< Parent for modal QMessageBox / QProgressDialog.
 };
-
-#endif

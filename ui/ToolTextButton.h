@@ -11,8 +11,7 @@
  * display text.
  */
 
-#ifndef TOOLTEXTBUTTON_H
-#define TOOLTEXTBUTTON_H
+#pragma once
 
 #include <QPushButton>
 
@@ -64,5 +63,3 @@ public:
 private:
     ButtonType m_type; ///< Logical role of this button.
 };
-
-#endif

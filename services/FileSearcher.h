@@ -17,8 +17,6 @@
  */
 
 #pragma once
-#ifndef FILESEARCHER_H
-#define FILESEARCHER_H
 
 #include <QObject>
 #include <QString>
@@ -70,5 +68,3 @@ signals:
      */
     void finished(int totalFound);
 };
-
-#endif

@@ -23,8 +23,7 @@
  * @endcode
  */
 
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#pragma once
 
 #include <QMainWindow>
 #include "ui/ToolBarWidget.h"
@@ -89,5 +88,3 @@ private:
     /** @brief Returns the panel that is NOT currently active. */
     FilePanel *inactivePanel() const;
 };
-
-#endif

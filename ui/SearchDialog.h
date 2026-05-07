@@ -11,8 +11,6 @@
  */
 
 #pragma once
-#ifndef SEARCHDIALOG_H
-#define SEARCHDIALOG_H
 
 #include <QDialog>
 #include <QLineEdit>
@@ -95,5 +93,3 @@ private:
      */
     void onResultDoubleClicked(QListWidgetItem *item);
 };
-
-#endif

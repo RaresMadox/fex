@@ -8,8 +8,6 @@
  */
 
 #pragma once
-#ifndef SEARCHCONTROLLER_H
-#define SEARCHCONTROLLER_H
 
 #include <QObject>
 #include <QWidget>
@@ -60,5 +58,3 @@ signals:
 private:
     QWidget *_parentWidget; ///< Parent for spawned SearchDialog instances.
 };
-
-#endif

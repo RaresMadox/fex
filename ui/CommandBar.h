@@ -12,8 +12,6 @@
  */
 
 #pragma once
-#ifndef COMMANDBAR_H
-#define COMMANDBAR_H
 
 #include <QWidget>
 #include <QHBoxLayout>
@@ -68,5 +66,3 @@ private:
     QLabel      *_label;  ///< Prompt label showing the current path.
     QLineEdit   *_input;  ///< Text field for command input.
 };
-
-#endif

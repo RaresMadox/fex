@@ -16,8 +16,6 @@
  */
 
 #pragma once
-#ifndef FUNCTIONBAR_H
-#define FUNCTIONBAR_H
 
 #include <QWidget>
 #include <QHBoxLayout>
@@ -67,5 +65,3 @@ private:
      */
     void addButton(int fKey, const QString &label);
 };
-
-#endif

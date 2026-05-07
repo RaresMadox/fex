@@ -7,8 +7,6 @@
  */
 
 #pragma once
-#ifndef DIRECTORYCOMPARATOR_H
-#define DIRECTORYCOMPARATOR_H
 
 #include <QString>
 #include <QList>
@@ -62,5 +60,3 @@ public:
     QList<CompareEntry> compare(const QString &leftPath,
                                 const QString &rightPath) const;
 };
-
-#endif

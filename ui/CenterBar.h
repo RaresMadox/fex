@@ -15,8 +15,6 @@
  */
 
 #pragma once
-#ifndef CENTERBAR_H
-#define CENTERBAR_H
 
 #include <QWidget>
 #include <QVBoxLayout>
@@ -79,5 +77,3 @@ private:
      */
     QPushButton *makeButton(const QString &label);
 };
-
-#endif

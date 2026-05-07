@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.28.3)
 
 project(FEX VERSION 1.0 LANGUAGES CXX)
 
-
+list(APPEND CMAKE_PREFIX_PATH "/home/madox/Qt/6.11.0/gcc_64")
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)

@@ -8,8 +8,6 @@
  */
 
 #pragma once
-#ifndef COMPARECONTROLLER_H
-#define COMPARECONTROLLER_H
 
 #include <QObject>
 #include <QWidget>
@@ -52,5 +50,3 @@ private:
     QWidget             *_parentWidget; ///< Parent for the CompareDialog.
     DirectoryComparator  _comparator;   ///< Stateless comparison service.
 };
-
-#endif

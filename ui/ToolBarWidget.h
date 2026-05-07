@@ -10,8 +10,6 @@
  */
 
 #pragma once
-#ifndef MYTOOLBARWIDGET_H
-#define MYTOOLBARWIDGET_H
 
 #include <QWidget>
 #include <QHBoxLayout>
@@ -45,5 +43,3 @@ private:
     QHBoxLayout *_left;   ///< Left-aligned group (Files … Start).
     QHBoxLayout *_right;  ///< Right-aligned group (Help).
 };
-
-#endif
