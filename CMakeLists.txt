@@ -13,7 +13,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 file(GLOB Src src/*)
 
-add_executable(${PROJECT_NAME} ${Src})
+set(RESOURCES
+    resources/resources.qrc
+)
+
+add_executable(${PROJECT_NAME} ${Src} ${RESOURCES})
 
 install(TARGETS ${PROJECT_NAME} 
     RUNTIME DESTINATION ${CMAKE_SOURCE_DIR}
