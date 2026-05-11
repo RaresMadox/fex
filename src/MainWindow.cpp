@@ -1,6 +1,5 @@
 #include "MainWindow.h"
 
-
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent)    
 {    
@@ -16,4 +15,3 @@ MainWindow::MainWindow(QWidget* parent)
     _layout->addWidget(_label);
 
 }
-

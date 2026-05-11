@@ -1,10 +1,8 @@
 #pragma once
-
 #include <QWidget>
 #include <QLabel>
 #include <QVBoxLayout>
 #include <QMainWindow>
-
 
 class MainWindow : public QMainWindow {
 
@@ -17,6 +15,4 @@ public:
 private:
     QVBoxLayout* _layout;
     QLabel* _label;
-
-
 };
